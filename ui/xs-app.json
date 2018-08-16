@@ -1,0 +1,19 @@
+{
+  "welcomeFile": "/ui/index.html",
+  "authenticationMethod": "none",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/ui/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    },
+    {
+      "source": "^/getProducts",
+      "target": "/products",
+      "destination": "getProducts"
+    }
+  ]
+}
